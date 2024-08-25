@@ -32,7 +32,7 @@ function useInputs(initialForm) {
         dispatch({
             type: 'RESET'
         });
-    });
+    }, []);
     return [state, onChange, reset];
 }
 
